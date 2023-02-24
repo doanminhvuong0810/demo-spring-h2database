@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-          git 'https://github.com/doanminhvuong0810/demo-spring-h2database.git'
+          git branch: 'dev', url: 'https://github.com/doanminhvuong0810/demo-spring-h2database.git'
         }
       }
     }
